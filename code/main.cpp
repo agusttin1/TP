@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
-#define num_zonas 3
+#define num_zonas 14
 #define num_transportes 4
-#define max_repartidores_x_zona 2
+#define max_repartidores_x_zona 20
 
 using namespace std;
 
@@ -167,14 +167,14 @@ bool verificarMaxZona(int zona, int transporte)
         {
             matrizRepartidores[zona - 1][transporte]++;
             cout << "Repartidor agregado en zona"
-                 << " " << zona << ", transporte " << transportes[transporte] << endl;
+                << " " << zona << ", transporte " << transportes[transporte] << endl;
         }
         else
         {
             cout << "la zona"
-                 << " " << zona << "con transporte "
-                 << " " << transportes[transporte] << " "
-                 << " ha alcanzado el maximo de repartidores. " << endl;
+                << " " << zona << "con transporte "
+                << " " << transportes[transporte] << " "
+                << " ha alcanzado el maximo de repartidores. " << endl;
             check = true;
         }
     }
